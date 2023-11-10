@@ -8,3 +8,8 @@ import '../components/training-cert.css'
 import '../components/footer.css'
 import '../components/util/util.css'
 
+
+function toggleNav() {
+  const navMenu = document.querySelector('.nav-menu-link');
+  navMenu.classList.toggle('show');
+}
