@@ -17,10 +17,8 @@
 }
 html{
   scroll-behavior: smooth;
-  font-size: 10px;
 }
 
 body{
   background-color: var(--cr-gray900);
-  font-size: 1rem;
 }

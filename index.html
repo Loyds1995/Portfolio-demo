@@ -15,11 +15,14 @@
     </header>
     
     <!-- navbar -->
-    <nav class="nav-menu">
+    <nav class="nav-menu container">
       <div class="nav-menu-sitename">
         <a href="#">SUPERTICIOSO</a>
       </div>
       <ul class="nav-menu-link">
+        <li class="closeBtn">
+          <span onclick="toggleNav()"> &times; </span>
+        </li>
         <li class="nav-link">
           <a href="">About</a>
         </li>
@@ -33,7 +36,7 @@
           <a href="">Contact</a>
         </li>
       </ul>
-      <button class="nav-menu-bar">
+      <button class="nav-menu-bar" onclick="toggleNav()">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
