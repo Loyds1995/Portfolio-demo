@@ -14,13 +14,22 @@ section{
 
 .btn{
   background-color: transparent;
-  padding:0.5rem;
+  padding:5px;
   font-family: 'atma',Arial, Helvetica, sans-serif;
   color: var(--cr-slate200);
   font-weight: 500;
-  font-size: 1.5rem;
   border: 2px solid var(--cr-slate200);
-  border-radius: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 0 var(--cr-teal700);
+}
+
+.btn:active{
+  box-shadow: none;
+  transform: translateY(10px);
+}
+
+img, svg, video{
+  width: 100%;
 }
 
 

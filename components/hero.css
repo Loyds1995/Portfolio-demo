@@ -1,0 +1,40 @@
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-img{
+  width:clamp(100px, 100%, 200px);
+  border: 2px solid var(--cr-teal700);
+  text-align: center;
+  padding: 20px;
+  box-shadow: -5px -5px 0 var(--cr-teal700);
+}
+
+.hero-img img{
+  width:100%;
+  vertical-align: middle;
+}
+.hero-profile-info{
+  color: var( --cr-slate200);
+  line-height:2rem;
+  text-align: center;
+  font-size:1.1rem ;
+}
+
+.hero-profile-info span{
+  font-weight: 900;
+  color: var(--cr-slate500);
+  font-size:1.1rem ;
+}
+
+.hero-more-info a{
+  text-decoration: none;
+  color: var(--cr-slate200);
+  font-size:1.1rem ;
+}
+
+
