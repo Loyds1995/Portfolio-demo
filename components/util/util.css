@@ -1,0 +1,23 @@
+.container{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+section{
+  border:  2px solid red;
+  height: 100vh;
+}
+
+.btn{
+  background-color: transparent;
+  padding:0.5rem;
+  font-family: 'atma',Arial, Helvetica, sans-serif;
+  color: var(--cr-slat200);
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: 2px solid var(--cr-slat200);
+  border-radius: 1rem;
+}
