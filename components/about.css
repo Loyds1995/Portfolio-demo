@@ -15,7 +15,7 @@
   border-top: 6px double var(--cr-teal700);
   border-bottom: 6px double var(--cr-teal700);
   color: var(--cr-slate500);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   padding-block: 10px;
 }
@@ -44,15 +44,40 @@
   font-family: 'atma',Arial, Helvetica, sans-serif;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
 .about-bday::after{
-  content: "09-21-1995";
+  content:"09-21-1995"
+}
+.about-status::after{
+  content: "Single";
+}
+.about-citizenship::after{
+  content: "Filipino"
+}
+
+
+.about-bday::after,
+.about-status::after,
+.about-citizenship::after{
   width: 100%;
   height: 100%;
   position: absolute;
-  top:0;
-  left:-100%;
+  top:-100%;
+  left:0;
   background-color: var(--cr-teal700);
-
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ transition: 0.5s ease-in;
 }
+
+
+.about-bday:hover::after,
+.about-status:hover::after,
+.about-citizenship:hover::after{
+  transform: translateY(100%);
+}
+
