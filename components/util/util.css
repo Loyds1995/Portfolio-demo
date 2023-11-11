@@ -4,11 +4,9 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 1rem;
 padding-right: 1rem;
-border: 2px solid yellow;
 }
 
 section{
-  border:  2px solid red;
   height: 100vh;
 }
 
