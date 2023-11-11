@@ -5,6 +5,7 @@ import '../components/hero.css'
 import '../components/about.css'
 import '../components/skills.css'
 import '../components/training-cert.css'
+import '../components/work-project.css'
 import '../components/footer.css'
 import '../components/util/util.css'
 

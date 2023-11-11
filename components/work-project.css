@@ -1,0 +1,54 @@
+.work-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+
+.work-project-heading h3{
+  font-size: 2rem;
+  background-image: linear-gradient(45deg,var(--cr-slate200),var(--cr-teal700),var(--cr-slate200));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+.work-project-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.work-project-name a{
+  color: var(--cr-slate200);
+  cursor: pointer;
+}
+
+.work-project-name a:hover{
+  color: var(--cr-teal700);
+}
+
+.work-project-img{
+  width:clamp(150px, 100%, 200px);
+}
+
+.work-project-description{
+  background-image: linear-gradient(45deg,var(--cr-slate200),var(--cr-teal700),var(--cr-slate200));
+  background-size: 300% 300%;
+  color: var(--cr-gray950);
+  border: 4px inset var( --cr-slate500);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  animation: text-gradient 10s cubic-bezier(0.5, 1, 0.5, 1)infinite;
+}
+@keyframes text-gradient {
+  0%{background-position: 0% 50%;}
+  50%{background-position: 100% 50%;}
+  100%{background-position: 0% 50%;}
+}
+
