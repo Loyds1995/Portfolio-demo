@@ -1,0 +1,148 @@
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0.5rem; */
+}
+
+.nav-menu-sitename a{
+    text-decoration: none;
+    color: var(--cr-slate200);
+    font-family: 'atma', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.nav-menu-bar{
+    border: none;
+    background: none;
+    color: var(--cr-slate200);
+    cursor: pointer;
+}
+
+.nav-menu-link{
+    display: none;
+}
+
+
+.nav-menu-link.nav-menu-content{
+    display: block;
+}
+
+.nav-menu-link{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background: var( --cr-teal700);
+}
+.nav-menu-link{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu-link span{
+    margin-bottom: 2rem;
+    padding: 5px;
+    color: var(--cr-slate200);
+    cursor: pointer;
+}
+
+.nav-menu-link li a{
+    display: block;
+    text-decoration: none;
+    color: var(--cr-slate200);
+    font-family: 'atma', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+.nav-menu-link li a:hover{
+    font-weight: 900;
+}
+
+
+
+/* media queries */
+/* @media (min-width: 320px) and (max-width: 480px) {
+} */
+
+/* @media (min-width: 481px) and (max-width: 767px) {
+  .container{
+    max-width: 481px;
+  } 
+} */
+
+/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+} */
+
+@media (min-width: 768px) {
+  .container{
+    max-width:768px;
+  }
+  .nav-menu{
+   gap: 20rem;
+}
+
+  .nav-menu-bar{
+    display: none;
+}
+  .nav-menu-link{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-menu-link.nav-menu-content{
+    display:none;
+}
+
+.nav-menu-link{
+    position:unset;
+    width: 100%;
+    height: unset;
+    background: transparent;
+}
+
+.nav-menu-link span{
+    display: none;
+}
+
+.nav-menu-link li a{
+    display: unset;
+    font-size: 1rem;
+    text-align: center;
+    padding-block: unset;
+    position: relative;
+}
+
+.nav-menu-link li a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    left:0;
+    bottom: -5px;
+    background-color: var(--cr-teal700);
+    transition: 0.8s ease;
+}
+
+.nav-menu-link li a:hover::after{
+    width: 100%;
+}
+}
+
+
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+  .container{
+    max-width:1025px;
+  }
+} */
+
+/* @media (min-width: 1281px) {
+  .container{
+    max-width:1281px;
+  }
+} */

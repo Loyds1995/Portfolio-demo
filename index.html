@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Supertcioso portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <div class="header-line"></div>
       <div class="header-logo">
         <span>L</span>
@@ -17,11 +17,18 @@
     <!-- navbar -->
     <nav class="nav-menu container">
       <div class="nav-menu-sitename">
-        <a href="#">SUPERTICIOSO</a>
+        <a href="#"><span>SUPER</span>TICIOSO</a>
       </div>
+      <button class="nav-menu-bar">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </button>
       <ul class="nav-menu-link">
-        <li class="closeBtn">
-          <span onclick="toggleNav()"> &times; </span>
+        <li >
+          <span class="material-symbols-outlined closeBtn">
+            close
+          </span>
         </li>
         <li class="nav-link">
           <a href="">About</a>
@@ -36,11 +43,6 @@
           <a href="">Contact</a>
         </li>
       </ul>
-      <button class="nav-menu-bar" onclick="toggleNav()">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </button>
     </nav>
 
     <!-- hero section -->

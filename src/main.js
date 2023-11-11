@@ -9,7 +9,15 @@ import '../components/footer.css'
 import '../components/util/util.css'
 
 
-function toggleNav() {
-  const navMenu = document.querySelector('.nav-menu-link');
-  navMenu.classList.toggle('show');
-}
+const menuBtn = document.querySelector('.nav-menu-bar');
+const menuLink = document.querySelector('.nav-menu-link');
+const closeBtn = document.querySelector('.closeBtn');
+
+menuBtn.addEventListener('click', ()=>{
+  menuLink.classList.add('nav-menu-content');
+  console.log(menuBtn);
+});
+
+closeBtn.addEventListener('click', ()=>{
+  menuLink.classList.remove('nav-menu-content');
+});
