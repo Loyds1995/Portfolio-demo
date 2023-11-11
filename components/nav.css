@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0.5rem; */
+    background-color: var(--cr-slate500);
+    position: fixed;
+    top: 7%;
+    z-index: 999;    
 }
 
 .nav-menu-sitename a{
