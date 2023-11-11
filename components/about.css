@@ -5,11 +5,7 @@
   gap: 2.5rem;
 }
 
-.about-heading h3{
-  color: var(--cr-slate200);
-  font-size: 2rem;
-  font-family: 'atma',Arial, Helvetica, sans-serif;
-}
+
 
 .about-content{
   border-top: 6px double var(--cr-teal700);

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma&family=Black+Ops+One&display=swap');
 
 :root{
-  --cr-gray900:#111827;
+  --cr-neutral900:#171717;
   --cr-slate500:#64748b;
   --cr-slate200:#e2e8f0;
   --cr-teal700:#0f766e;
@@ -20,5 +20,14 @@ html{
 }
 
 body{
-  background-color: var(--cr-gray900);
+  background-color: var( --cr-neutral900);
+}
+
+h3, h4{
+  font-family: 'atma',Arial, Helvetica, sans-serif;
+  color: var(--cr-slate200);
+}
+
+h3{
+  font-size: 1.5rem;
 }
