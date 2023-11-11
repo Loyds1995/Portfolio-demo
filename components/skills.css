@@ -7,8 +7,11 @@
 }
 
 .skills-heading{
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.5);
+    border-top: 4px solid rgba(0,128,128,1);
+    border-bottom: 4px solid rgba(0,128,128,0.2);
+    border-left: 4px solid rgba(0,128,128,1);
+    border-right: 4px solid rgba(0,128,128,0.2);
+   
     padding-inline: 1rem;
     transform: skewX(-35deg);
     margin-bottom: 1rem;
@@ -32,11 +35,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.5);
+    border-top: 5px solid rgba(0,128,128,0.5);
+   border-bottom: 5px solid  rgba(0,128,128,0.5);
+   border-left: 2px solid rgba(0,128,128,0.5);
+   border-right: 2px solid rgba(0,128,128,0.5);
     color: var( --cr-slate200);
     padding: 10px;
-    gap: 5px;
+    gap: 10px;
   }
 
   .skills-content ul{
@@ -52,7 +57,7 @@
   .skills-content-1 li{
     border: 2px solid var(--cr-slate500);
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 1rem;
     text-align: center;
     padding: 5px;
     box-shadow: 0 0 5px var(--cr-teal700);

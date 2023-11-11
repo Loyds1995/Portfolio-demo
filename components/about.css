@@ -11,7 +11,8 @@
   border-top: 6px double var(--cr-teal700);
   border-bottom: 6px double var(--cr-teal700);
   color: var(--cr-slate500);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 900;
   text-align: center;
   padding-block: 10px;
 }
@@ -30,10 +31,12 @@
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
+ 
 }
 
 .about-info  button{
   background-color: transparent;
+  font-size: 1rem;
   color: var(--cr-slate200);
   padding:10px;
   border: 2px solid var(--cr-teal700);

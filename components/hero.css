@@ -22,13 +22,14 @@
   color: var( --cr-slate200);
   line-height:2rem;
   text-align: center;
-  font-size:1.1rem ;
+  font-size: 0.9rem;
 }
 
 .hero-profile-info span{
   font-weight: 900;
   color: var(--cr-slate500);
   font-size:1.1rem ;
+  margin-right: 5px;
 }
 
 .hero-more-info a{

@@ -44,7 +44,8 @@
   border: 4px inset var( --cr-slate500);
   border-radius: 10px;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 900;
   animation: text-gradient 10s cubic-bezier(0.5, 1, 0.5, 1)infinite;
 }
 @keyframes text-gradient {
