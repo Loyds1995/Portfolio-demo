@@ -7,10 +7,13 @@
 }
 
 .skills-heading{
-    border:2px solid var(--cr-teal700);
-    padding-inline: 10px;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+    padding-inline: 1rem;
     transform: skewX(-35deg);
     margin-bottom: 1rem;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
 }
 
 .skills-heading h3 {
@@ -19,12 +22,21 @@
   }
 
   .skills-content{
-    border: 4px outset var(--cr-teal700);
-    padding: 1.5rem;
+    width: 300px;
+    height: 400px;
+    margin:30px;
+    /* box-shadow: 20px 20px 0 var(--cr-teal700); */
+    border-radius: 1rem;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    color: var( --cr-slate500);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    color: var( --cr-slate200);
+    padding: 10px;
+    gap: 5px;
   }
 
   .skills-content ul{
