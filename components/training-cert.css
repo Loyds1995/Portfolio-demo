@@ -1,0 +1,35 @@
+.training-work-exp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.training-heading{
+  background: var( --cr-teal700);
+  padding: 0.5rem;
+  margin-bottom: -1.5rem;
+  z-index: 1;
+}
+
+.training-container{
+  border: 6px solid var(--cr-teal700);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  flex-wrap: wrap;
+
+}
+
+
+.training-list, .certificate-list{
+  color: var(--cr-slate500);
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
