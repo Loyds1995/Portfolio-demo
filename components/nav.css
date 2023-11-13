@@ -90,6 +90,7 @@
 
   .nav-menu{
     justify-content: space-between;
+    padding-inline:  2.5rem;
      
 }
 
@@ -156,8 +157,13 @@
     max-width: 1025px;
   } */
 
+  .nav-menu{
+    padding-inline:  3rem;
+}
+
+
   .nav-menu-link{
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .nav-menu-link li a{
@@ -173,14 +179,16 @@
     max-width: 1281px;
   } */
 
+  .nav-menu{
+    padding-inline:  8rem;
+}
+
   .nav-menu-link{
-    margin-left: 2.5rem;
+    margin-left: 3rem;
 }
 
 .nav-menu-link li a{
  
-    margin-right: 2rem;
-
-
+    margin-right: 3rem;
 }
 }

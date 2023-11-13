@@ -60,7 +60,6 @@
   .hero{
     flex-direction:row;
     position: relative;
-    border: 2px solid red;
    
   }
   
@@ -86,7 +85,7 @@
     flex-direction:row;
     gap: 2.5rem;
     position: relative;
-    border: 2px solid red;
+
    
   }
   
@@ -103,7 +102,7 @@
   .hero-more-info{
    position: absolute;
    bottom: 25%;
-   right: 30%;
+   right: 40%;
   }
 }
 
@@ -115,7 +114,6 @@
     flex-direction:row;
     gap: 4rem;
      justify-content: flex-start;
-    border: 2px solid red;
   }
 
   .hero-img{
@@ -176,7 +174,7 @@
     width:300px;
     position: absolute;
     top:20%;
-    right: 5%;
+    right: 0;
   }
 
   .hero-vr2-line{
@@ -191,7 +189,7 @@
     height: 300px;
     position: absolute;
     top:15%;
-    right: 10%;
+    right: 5%;
   }
 
  
