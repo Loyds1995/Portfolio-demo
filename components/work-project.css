@@ -8,14 +8,6 @@
   padding-top: 80px;
 }
 
-.work-project-heading h3{
-  font-size: 2rem;
-  background-image: linear-gradient(45deg,var(--cr-slate200),var(--cr-teal700),var(--cr-slate200));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  
-}
 
 .work-project-content{
   display: flex;
