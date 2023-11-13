@@ -7,7 +7,7 @@
     padding-top: 80px;
 }
 
-.skills-heading{
+/* .skills-heading{
     border-top: 4px solid rgba(0,128,128,1);
     border-bottom: 4px solid rgba(0,128,128,0.2);
     border-left: 4px solid rgba(0,128,128,1);
@@ -18,21 +18,19 @@
     margin-bottom: 1rem;
     background: rgba(255,255,255,0.1);
     overflow: hidden;
-}
+} */
 
-.skills-heading h3 {
+/* .skills-heading h3 {
     text-align: center;
     transform: skewX(30deg);
-  }
+  } */
 
   .skills-content{
-    width: 300px;
-    height: 400px;
-    margin:30px;
-    /* box-shadow: 20px 20px 0 var(--cr-teal700); */
+    position: relative;
+    width: 18rem;
     border-radius: 1rem;
-    background: rgba(255,255,255,0.1);
-    overflow: hidden;
+    background: rgba(255,255,255,0.2);
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +39,45 @@
    border-left: 2px solid rgba(0,128,128,0.5);
    border-right: 2px solid rgba(0,128,128,0.5);
     color: var( --cr-slate200);
-    padding: 10px;
-    gap: 10px;
+    padding: 0.5rem;
+    gap: 5px;
+  }
+
+  .skills-span{
+    position: absolute;
+    top:-0.7rem;
+    right: -0.7rem;
+    width:7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .skills-span::before{
+    position: absolute;
+    content: "Skills";
+    font-family: 'atma', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    width:150%;
+    height: 2rem;
+    background: var(--cr-teal700);
+    text-align: center;
+    line-height: 2rem;
+    transform: rotate(45deg) translateY(-1rem);
+  }
+
+  .skills-span::after{
+    position: absolute;
+    content: "";   
+    right:0;
+    bottom: 0;
+    width:0.7rem;
+    height: 0.7rem;
+    background-color:teal;
+    box-shadow: -6.3rem -6.3rem teal;
+    z-index: -100;
   }
 
   .skills-content ul{
@@ -58,7 +93,7 @@
   .skills-content-1 li{
     border: 2px solid var(--cr-slate500);
     margin-bottom: 10px;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     text-align: center;
     padding: 5px;
     box-shadow: 0 0 5px var(--cr-teal700);
