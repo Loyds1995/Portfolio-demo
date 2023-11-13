@@ -39,3 +39,161 @@
 }
 
 
+/* media queries */
+/* @media (min-width: 320px) and (max-width: 480px) {
+} */
+
+/* @media (min-width: 481px) and (max-width: 767px) {
+  .container{
+    max-width: 481px;
+  } 
+} */
+
+/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+} */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container{
+    max-width:768px;
+  }
+
+  .hero{
+    flex-direction:row;
+    position: relative;
+    border: 2px solid red;
+   
+  }
+  
+  .hero-img{
+    box-shadow: -5px 5px 0 var(--cr-teal700);
+  }
+  
+ 
+  .hero-more-info{
+   position: absolute;
+   bottom: 20%;
+  }
+
+
+}
+
+@media (min-width: 1025px){
+  .container{
+    max-width:1025px;
+  }
+
+  .hero{
+    flex-direction:row;
+    gap: 2.5rem;
+    position: relative;
+    border: 2px solid red;
+   
+  }
+  
+  .hero-img{
+    box-shadow: -5px 5px 0 var(--cr-teal700);
+  }
+
+  .hero-vr-line{
+    border-left: 4px solid var(--cr-teal700);
+    height: 400px;
+  }
+  
+ 
+  .hero-more-info{
+   position: absolute;
+   bottom: 25%;
+   right: 30%;
+  }
+}
+
+@media (min-width: 1281px) {
+  .container{
+    max-width:1281px;
+  }
+  .hero{
+    flex-direction:row;
+    gap: 4rem;
+     justify-content: flex-start;
+    border: 2px solid red;
+  }
+
+  .hero-img{
+   
+    width:clamp(150px, 100%, 250px);
+    position: relative;
+    border:unset;
+    box-shadow:unset;
+   
+  }
+
+  .hero-img::before{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--cr-teal700);
+    border-radius: 50%;
+    border-color: var(--cr-teal700) transparent var(--cr-teal700) transparent;
+     animation: circle-rotate 2s linear infinite;
+  }
+
+  @keyframes circle-rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+  
+  .hero-img img{
+    width:80%;
+    border-radius: 50%;
+    position: absolute;
+    top:16%;
+    left:18%;
+  }
+
+  .hero-vr-line{
+    border-left: 4px solid var(--cr-slate500);
+    height: 400px;
+  }
+  
+ 
+  .hero-more-info{
+   position: absolute;
+   bottom: 25%;
+   right: unset;
+   left: 40%;
+  }
+
+  .hero-hr-line{
+    border-top: 4px solid var(--cr-slate500);
+    width:300px;
+    position: absolute;
+    bottom:40%;
+    right: 30%;
+  }
+  .hero-hr2-line{
+    border-top: 4px solid var(--cr-slate500);
+    width:300px;
+    position: absolute;
+    top:20%;
+    right: 5%;
+  }
+
+  .hero-vr2-line{
+    border-left: 4px solid var(--cr-slate500);
+    height: 300px;
+    position: absolute;
+    top:35%;
+    right: 42%;
+  }
+  .hero-vr3-line{
+    border-left: 4px solid var(--cr-slate500);
+    height: 300px;
+    position: absolute;
+    top:15%;
+    right: 10%;
+  }
+
+ 
+
+}
