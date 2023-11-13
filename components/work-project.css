@@ -36,6 +36,18 @@
 .work-project-img{
   width:clamp(150px, 100%, 200px);
 }
+.description-name h4{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.work-project-description{
+  visibility: hidden;
+}
+
+.description-name:hover ~ .work-project-description{
+ visibility: visible;
+}
 
 .work-project-description{
   margin-inline: 2rem;
