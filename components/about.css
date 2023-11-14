@@ -16,9 +16,11 @@
   font-weight: 900;
   text-align: center;
   padding-block: 10px;
+  user-select: none;
 }
 
 .about-content img{
+  user-select: none;
   width:6em;
   height: 6em;
   border: 5px solid var(--cr-teal700);
@@ -171,7 +173,7 @@
   .about-content p{
     border-right: 6px double var(--cr-teal700);
     text-align:center;
-    padding-right:20px;
+    padding-right:2.5rem;
     width: clamp(300px, 100%, 500px);
    
   }
@@ -184,7 +186,7 @@
     padding: 10px;
     position: absolute;
     top: -20%;
-    right: 15%;
+    right: 5%;
     box-shadow: 0 0 10px var(--cr-slate500);
   }
   .about-info{
