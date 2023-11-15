@@ -125,8 +125,8 @@
     display:unset;
     text-align: unset;
     padding-block: unset;
-    margin-left: 1.5rem;
-    font-size: 1.1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
     position: relative;
 }
 
@@ -163,7 +163,7 @@
 
 
   .nav-menu-link{
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 
 .nav-menu-link li a{
@@ -184,7 +184,7 @@
 }
 
   .nav-menu-link{
-    margin-left: 3rem;
+    margin-left: 2.5rem;
 }
 
 .nav-menu-link li a{
