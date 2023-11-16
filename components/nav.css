@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cr-slate500);
-    position: fixed;
     width: 100%;
+    position: fixed;
+    left:0;
+    right: 0;
     top: 7%;
-    padding:0  1rem;
+    /* padding:0  1rem; */
     z-index: 999;    
 }
 
