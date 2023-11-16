@@ -43,7 +43,8 @@ h4{
 
 section{
   min-height: 100vh;
-  display: grid;
-  place-items: center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

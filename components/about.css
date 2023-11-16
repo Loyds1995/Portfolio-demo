@@ -31,7 +31,7 @@
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
- 
+  
 }
 
 .about-info  button{
@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
- transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 
@@ -81,7 +81,7 @@
 }
 .about-content img:nth-child(2){
   display: none;
-    }
+}
 
 
 
@@ -103,8 +103,8 @@
     height: 6.5em;
     margin-top: -4.5em;
   }
- 
-
+  
+  
 }
 
 /* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -114,7 +114,7 @@
   .container{
     max-width:768px;
   }
-
+  
   .about-content{
     border-left: 6px double var(--cr-teal700);
     border-right: 6px double var(--cr-teal700);
@@ -127,7 +127,7 @@
     flex-wrap: wrap;
     position: relative;
   }
-
+  
   .about-content p{
     text-align:left;
     align-items: flex-start;
@@ -150,14 +150,14 @@
     gap: 2rem;
   }
   
-
+  
 }
 
 @media (min-width: 1025px) {
   .container{
     max-width:1025px;
   }
-
+  
   .about-heading{
     margin-left: 14rem;
   }
@@ -166,13 +166,13 @@
     border-left: unset;
     border-right:unset;
   }
-
+  
   .about-content p{
     border-right: 6px double var(--cr-teal700);
     text-align:center;
     padding-right:2.5rem;
     width: clamp(300px, 100%, 500px);
-   
+    
   }
   
   .about-content img{
@@ -189,7 +189,7 @@
   .about-info{
     gap: 2.5rem;
   }
-
+  
   
 }
 
@@ -204,36 +204,36 @@
     margin-left: 20rem;
     margin-bottom: -5rem;
   }
-
+  
   .about-content{
     border-left: unset;
     border-right:unset;
   }
-
+  
   .about-content p{
     border-right:unset;
     text-align:justify;
     padding-left:5rem;
     width: clamp(300px, 100%, 800px);
-   
+    
   }
   
   .about-content img{
-    width:15em;
-    height: 15em;
-    padding: 1.5rem;
+    width:12em;
+    height: 12em;
+    padding: 1rem;
     position: absolute;
     top:-70%;
   }
   .about-content img:nth-child(1){
-    top:-115%;
+    top:-85%;
     right: 30%;
   }
-
+  
   .about-content img:nth-child(2){
-display: block;
+    display: block;
     top:-20%;
-    right: 15%;
+    right: 18%;
   }
   .about-info{
     gap: 7rem;
