@@ -11,6 +11,7 @@ import '../components/util/util.css'
 
 
 document.addEventListener('DOMContentLoaded', function () {
+  const sections =  document.querySelectorAll('.main');
   const menuBtn = document.querySelector('.nav-menu-bar');
   const menuLink = document.querySelector('.nav-menu-link');
   const closeBtn = document.querySelector('.closeBtn');
@@ -18,16 +19,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menuBtn.addEventListener('click', () => {
     menuLink.classList.add('nav-menu-content');
+    menuLink.style.width = "200px";
+    sections.forEach((section)=>{
+      section.style.opacity = '0.2';
+    })
+  
+    
   });
 
   closeBtn.addEventListener('click', () => {
     menuLink.classList.remove('nav-menu-content');
+    sections.forEach((section)=>{
+      section.style.opacity = '1';
+    })
   });
 
   
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       menuLink.classList.remove('nav-menu-content');
+      sections.forEach((section)=>{
+        section.style.opacity = '1';
+      })
     });
   });
 });

@@ -9,6 +9,7 @@
     top: 7%;
     /* padding:0  1rem; */
     z-index: 999;    
+  
 }
 
 .nav-menu-sitename a{
@@ -32,6 +33,7 @@
 
 .nav-menu-link.nav-menu-content{
     display: block;
+   
 }
 
 .nav-menu-link{
@@ -42,6 +44,7 @@
     top: 0;
     background: var( --cr-teal700);
     z-index: 999;
+    transition:1s;
 }
 .nav-menu-link{
     list-style-type: none;
