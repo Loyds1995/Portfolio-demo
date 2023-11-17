@@ -53,24 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
 let htmlSkills='';
 
 skills.forEach((skill)=>{
-  htmlSkills += `<ul class="skills-content-1-list">
-  <li class="skills-list-1">${skill}</li>
-  </ul>`;
+  htmlSkills += `
+  <li class="skills-list-1">${skill}</li>`;
 });
 
-document.querySelector('.skills-content-1').innerHTML = htmlSkills;
+document.querySelector('.skills-content-1-list').innerHTML = htmlSkills;
 
 let htmlSkills2 = '';
 skills2.forEach((skills)=>{
-  htmlSkills2 += `<ul class="skills-content-2-list">
+  htmlSkills2 += `
   <li class="skills-list-2">
   ${skills.skillList1.List1} ${skills.skillList1.List2}
   </li>
   <li class="skills-list-2">
   ${skills.skillList2.List1}<br>${skills.skillList2.List2}
   </li>
-  </ul>
   `;
 });
 
-document.querySelector('.skills-content-2').innerHTML = htmlSkills2;
+document.querySelector('.skills-content-2-list').innerHTML = htmlSkills2;
