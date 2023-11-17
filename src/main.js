@@ -10,19 +10,6 @@ import '../components/footer.css'
 import '../components/util/util.css'
 
 
-// const menuBtn = document.querySelector('.nav-menu-bar');
-// const menuLink = document.querySelector('.nav-menu-link');
-// const closeBtn = document.querySelector('.closeBtn');
-
-// menuBtn.addEventListener('click', ()=>{
-//   menuLink.classList.add('nav-menu-content');
-//   console.log(menuBtn);
-// });
-
-// closeBtn.addEventListener('click', ()=>{
-//   menuLink.classList.remove('nav-menu-content');
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
   const menuBtn = document.querySelector('.nav-menu-bar');
   const menuLink = document.querySelector('.nav-menu-link');
@@ -30,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.nav-link a');
 
   menuBtn.addEventListener('click', () => {
-    menuLink.classList.toggle('nav-menu-content');
+    menuLink.classList.add('nav-menu-content');
   });
 
   closeBtn.addEventListener('click', () => {
