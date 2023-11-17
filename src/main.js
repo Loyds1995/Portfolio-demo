@@ -9,10 +9,12 @@ import '../components/work-project.css'
 import '../components/footer.css'
 import '../components/util/util.css'
 
-import { skills, skills2 } from './data/skills'
+import {skills, skills2 } from './data/skills/skills.js'
+import { skillsHtml } from './data/skills/skillsHtml.js'
+ document.addEventListener('DOMContentLoaded', function(){
+  skillsHtml();
 
-// nav menu
-document.addEventListener('DOMContentLoaded', function () {
+  // nav menu
   const sections =  document.querySelectorAll('.main');
   const menuBtn = document.querySelector('.nav-menu-bar');
   const menuLink = document.querySelector('.nav-menu-link');
@@ -45,30 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     });
   });
-});
+ } )
 
 
-// // skills
 
-let htmlSkills='';
 
-skills.forEach((skill)=>{
-  htmlSkills += `
-  <li class="skills-list-1">${skill}</li>`;
-});
-
-document.querySelector('.skills-content-1-list').innerHTML = htmlSkills;
-
-let htmlSkills2 = '';
-skills2.forEach((skills)=>{
-  htmlSkills2 += `
-  <li class="skills-list-2">
-  ${skills.skillList1.List1} ${skills.skillList1.List2}
-  </li>
-  <li class="skills-list-2">
-  ${skills.skillList2.List1}<br>${skills.skillList2.List2}
-  </li>
-  `;
-});
-
-document.querySelector('.skills-content-2-list').innerHTML = htmlSkills2;
