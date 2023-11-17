@@ -11,7 +11,10 @@ import '../components/util/util.css'
 
 import {skills, skills2 } from './data/skills/skills.js'
 import { skillsHtml } from './data/skills/skillsHtml.js'
+
+
  document.addEventListener('DOMContentLoaded', function(){
+  // for skills section
   skillsHtml();
 
   // nav menu
@@ -47,6 +50,8 @@ import { skillsHtml } from './data/skills/skillsHtml.js'
       })
     });
   });
+
+  // end of nav menu
  } )
 
 
