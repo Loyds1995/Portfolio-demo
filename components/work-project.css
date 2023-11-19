@@ -1,57 +1,71 @@
-.work-project{
+.work-project {
   height: 100%;
   gap: 10px;
   padding-top: 80px;
 }
 
-
-.work-project-content{
+.work-project-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
-.work-project-name a{
+.work-project-name a {
   color: var(--cr-slate200);
   cursor: pointer;
 }
 
-.work-project-name a:hover{
+.work-project-name a:hover {
   color: var(--cr-teal700);
 }
 
-.work-project-img{
-  width:clamp(150px, 100%, 200px);
+.work-project-img {
+  width: clamp(150px, 100%, 200px);
 }
-.description-name h4{
+.description-name h4 {
   cursor: pointer;
   text-decoration: underline;
 }
-
-.work-project-description{
-  visibility: hidden;
+.close-modal {
+  font-size: 1.5rem;
+  position: absolute;
+  top: -2%;
+  right: 4%;
+  cursor: pointer;
 }
 
-.description-name:hover ~ .work-project-description{
- visibility: visible;
-}
-
-.work-project-description{
-  margin-inline: 2rem;
-  background-image: linear-gradient(45deg,var(--cr-slate200),var(--cr-teal700),var(--cr-slate200));
+.work-project-description {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 12%;
+  width: clamp(200px, 100%, 250px);
+  background-image: linear-gradient(
+    45deg,
+    var(--cr-slate200),
+    var(--cr-teal700),
+    var(--cr-slate200)
+  );
   background-size: 300% 300%;
   color: var(--cr-gray950);
-  border: 4px inset var( --cr-slate500);
+  border: 4px inset var(--cr-slate500);
   border-radius: 10px;
-  padding: 10px;
+  padding: 1.5rem 10px;
   font-size: 0.9rem;
   font-weight: 900;
-  animation: text-gradient 10s cubic-bezier(0.5, 1, 0.5, 1)infinite;
+  animation: text-gradient 10s cubic-bezier(0.5, 1, 0.5, 1) infinite;
+  z-index: 999;
 }
 @keyframes text-gradient {
-  0%{background-position: 0% 50%;}
-  50%{background-position: 100% 50%;}
-  100%{background-position: 0% 50%;}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
