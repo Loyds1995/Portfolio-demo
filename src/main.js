@@ -9,15 +9,11 @@ import "../components/work-project.css";
 import "../components/footer.css";
 import "../components/util/util.css";
 
-import { skills, skills2 } from "./skills/skills.js";
-import { skillsHtml } from "./skills/skillsHtml.js";
-
-import { toggleDescription } from "./work/work-proj.js";
+import { htmlSkills } from "./skills/skillsHtml";
 
 document.addEventListener("DOMContentLoaded", function () {
   // for skills section
-  skillsHtml();
-  toggleDescription();
+  htmlSkills();
 
   // nav menu
   const sections = document.querySelectorAll(".main");

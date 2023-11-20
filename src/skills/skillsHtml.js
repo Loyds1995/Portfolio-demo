@@ -1,26 +1,33 @@
-import { skills, skills2 } from "./skills";
+import { skills } from "./skills";
 
-export function skillsHtml() {
-  let htmlSkills = "";
+export function htmlSkills() {
+  let skillsHtml = "";
 
   skills.forEach((skill) => {
-    htmlSkills += `
-      <li class="skills-list-1">${skill}</li>`;
+    skillsHtml += `
+    <div class="skills-content">
+    <span class="skills-span"></span>
+    <div class="skills-content-1">
+      <ul class="skills-content-1-list">
+        ${skill.skillsList
+          .map((item) => `<li class="skills-list-1">${item}</li>`)
+          .join("")}  
+      </ul>
+    </div>
+    <div class="skills-content-2">
+      <ul class="skills-content-2-list">
+        <li class="skills-list-2">
+        ${skill.skillList1.List1}
+        ${skill.skillList1.List2}
+        </li>
+        <li class="skills-list-2">
+        ${skill.skillList2.List1}
+        ${skill.skillList2.List2}
+        </li>
+      </ul>
+    </div>
+  </div>
+  `;
   });
-
-  document.querySelector(".skills-content-1-list").innerHTML = htmlSkills;
-
-  let htmlSkills2 = "";
-  skills2.forEach((skills) => {
-    htmlSkills2 += `
-      <li class="skills-list-2">
-      ${skills.skillList1.List1} ${skills.skillList1.List2}
-      </li>
-      <li class="skills-list-2">
-      ${skills.skillList2.List1}<br>${skills.skillList2.List2}
-      </li>
-      `;
-  });
-
-  document.querySelector(".skills-content-2-list").innerHTML = htmlSkills2;
+  document.getElementById("skills").innerHTML = skillsHtml;
 }
