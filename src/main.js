@@ -11,10 +11,12 @@ import "../components/util/util.css";
 
 import { htmlSkills } from "./skills/skillsHtml";
 import { htmlProfile } from "./profile/profile";
+import { htmlAbout } from "./about/aboutHtml";
 
 document.addEventListener("DOMContentLoaded", function () {
   // for skills section
   htmlProfile();
+  htmlAbout();
   htmlSkills();
 
   // nav menu
