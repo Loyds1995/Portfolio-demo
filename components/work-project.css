@@ -1,71 +1,49 @@
-.work-project {
-  height: 100%;
-  gap: 10px;
-  padding-top: 80px;
+.work-project{
 }
 
-.work-project-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-}
-
-.work-project-name a {
+.proj-name a{
   color: var(--cr-slate200);
-  cursor: pointer;
 }
-
-.work-project-name a:hover {
+.proj-name a:hover{
   color: var(--cr-teal700);
 }
 
-.work-project-img {
-  width: clamp(150px, 100%, 200px);
-}
-.description-name h4 {
-  cursor: pointer;
-  text-decoration: underline;
-}
-.close-modal {
-  font-size: 1.5rem;
-  position: absolute;
-  top: -2%;
-  right: 4%;
-  cursor: pointer;
+.proj-img{
+  width:clamp(100px,100%, 200px);
 }
 
-.work-project-description {
-  display: none;
+
+.proj-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--cr-slate200);
+  position: relative;
+}
+.proj-description{
+  margin-top: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  
+}
+.proj-description:hover~ .proj-desc-details{
+ opacity: 1;
+}
+
+
+
+.proj-desc-details{
+  font-size: 0.8rem;
+  padding:0.5rem 2px;
+  text-align: center;
+  border: 2px inset var( --cr-gray950);
+  background-image: linear-gradient(150deg,var(--cr-teal700),var(--cr-slate500));
+  color: var(--cr-slate200);
+  font-weight: 700;
   position: absolute;
   top: 35%;
-  left: 12%;
-  width: clamp(200px, 100%, 250px);
-  background-image: linear-gradient(
-    45deg,
-    var(--cr-slate200),
-    var(--cr-teal700),
-    var(--cr-slate200)
-  );
-  background-size: 300% 300%;
-  color: var(--cr-gray950);
-  border: 4px inset var(--cr-slate500);
-  border-radius: 10px;
-  padding: 1.5rem 10px;
-  font-size: 0.9rem;
-  font-weight: 900;
-  animation: text-gradient 10s cubic-bezier(0.5, 1, 0.5, 1) infinite;
-  z-index: 999;
-}
-@keyframes text-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  width:200px;
+  transition: all 1s ease-in-out ;
+  opacity: 0;
 }
