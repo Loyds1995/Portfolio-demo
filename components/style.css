@@ -1,47 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Atma&family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atma&family=Poppins:wght@200&display=swap");
 
-:root{
-  --cr-gray950:#030712;
-  --cr-slate500:#64748b;
-  --cr-slate200:#e2e8f0;
-  --cr-teal700:#0f766e;
+:root {
+  --cr-gray950: #030712;
+  --cr-slate500: #64748b;
+  --cr-slate200: #e2e8f0;
+  --cr-teal700: #0f766e;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
-  background:linear-gradient(-45deg,var(--cr-slate500),var(--cr-gray950)) ;
-  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+body {
+  background: linear-gradient(-45deg, var(--cr-slate500), var(--cr-gray950));
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-h3, h4{
-  font-family: 'atma',Arial, Helvetica, sans-serif;
+h3,
+h4 {
+  font-family: "atma", Arial, Helvetica, sans-serif;
   color: var(--cr-slate200);
-
 }
 
-h3{
+h3 {
   font-size: 2rem;
-  background-image: linear-gradient(-180deg,var(--cr-teal700),var(--cr-slate200),var(--cr-slate500));
+  background-image: linear-gradient(
+    -180deg,
+    var(--cr-teal700),
+    var(--cr-slate200),
+    var(--cr-slate500)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-h4{
+h4 {
   font-size: 1.2rem;
 }
 
-section{
+section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

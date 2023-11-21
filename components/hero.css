@@ -1,61 +1,60 @@
-.hero{
+.hero {
   gap: 1rem;
   padding-top: 4rem;
 }
 
-.hero-img{
-  width:clamp(100px, 100%, 200px);
+.hero-img {
+  width: clamp(100px, 100%, 200px);
   text-align: center;
-  padding:1rem;
+  padding: 1rem;
   position: relative;
 }
 
-.hero-img::before{
-  content:"";
+.hero-img::before {
+  content: "";
   position: absolute;
-  top:0;
-  left:0;
-  width: 50%;;
+  top: 0;
+  left: 0;
+  width: 50%;
   height: 50%;
   border-top: 2px solid var(--cr-teal700);
   border-left: 2px solid var(--cr-teal700);
 }
 
-.hero-img::after{
-  content:"";
+.hero-img::after {
+  content: "";
   position: absolute;
   bottom: 0;
-  right:0;
-  width: 50%;;
+  right: 0;
+  width: 50%;
   height: 50%;
   border-bottom: 2px solid var(--cr-teal700);
   border-right: 2px solid var(--cr-teal700);
 }
 
-.hero-img img{
-  width:80%;
+.hero-img img {
+  width: 80%;
   vertical-align: middle;
 }
-.hero-profile-info{
-  color: var( --cr-slate200);
-  line-height:2rem;
+.hero-profile-info {
+  color: var(--cr-slate200);
+  line-height: 2rem;
   text-align: center;
   font-size: 0.9rem;
 }
 
-.hero-profile-info span{
+.hero-profile-info span {
   font-weight: 900;
   color: var(--cr-slate500);
-  font-size:1.1rem ;
+  font-size: 1.1rem;
   margin-right: 5px;
 }
 
-.hero-more-info a{
+.hero-more-info a {
   text-decoration: none;
   color: var(--cr-slate200);
-  font-size:1.1rem ;
+  font-size: 1.1rem;
 }
-
 
 /* media queries */
 /* @media (min-width: 320px) and (max-width: 480px) {
@@ -71,118 +70,112 @@
 } */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .container{
-    max-width:768px;
+  .container {
+    max-width: 768px;
   }
 
-  .hero{
-    flex-direction:row;
+  .hero {
+    flex-direction: row;
     position: relative;
-   gap: 2rem;
+    gap: 2rem;
   }
-  
-  .hero-img{
-    width:clamp(100px, 100%, 200px);
+
+  .hero-img {
+    width: clamp(100px, 100%, 200px);
     text-align: center;
     padding: 20px;
     position: relative;
   }
-  
-  .hero-img::before{
-    top:unset;
+
+  .hero-img::before {
+    top: unset;
     bottom: 0;
     border-bottom: 2px solid var(--cr-teal700);
     border-top: unset;
   }
-  
-  .hero-img::after{
+
+  .hero-img::after {
     bottom: unset;
     top: 0;
     border-bottom: unset;
     border-top: 2px solid var(--cr-teal700);
   }
- 
-  .hero-more-info{
-   position: absolute;
-   bottom: 20%;
+
+  .hero-more-info {
+    position: absolute;
+    bottom: 20%;
   }
-
-
 }
 
-@media (min-width: 1025px){
-  .container{
-    max-width:1025px;
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1025px;
   }
 
-  .hero{
-    flex-direction:row;
+  .hero {
+    flex-direction: row;
     gap: 3.5rem;
     position: relative;
-
   }
-  .hero-img{
-    width:clamp(250px, 100%, 300px);
+  .hero-img {
+    width: clamp(250px, 100%, 300px);
     border: 2px solid var(--cr-teal700);
     box-shadow: -4px 4px var(--cr-teal700);
   }
 
-  .hero-img img{
+  .hero-img img {
     border-radius: 50%;
   }
 
-  .hero-img::before{
+  .hero-img::before {
     position: unset;
-    top:unset;
+    top: unset;
     bottom: unset;
     border-bottom: unset;
     border-top: unset;
     border-left: unset;
   }
-  
-  .hero-img::after{
+
+  .hero-img::after {
     position: unset;
     bottom: unset;
-    top:unset;
+    top: unset;
     border-bottom: unset;
     border-top: unset;
     border-right: unset;
   }
 
-  .hero-vr-line{
+  .hero-vr-line {
     border-left: 4px solid var(--cr-teal700);
     height: 400px;
     box-shadow: 0 0 10px var(--cr-slate500);
   }
-  
- 
-  .hero-more-info{
-   position: absolute;
-   bottom: 25%;
-   right: 40%;
+
+  .hero-more-info {
+    position: absolute;
+    bottom: 25%;
+    right: 40%;
   }
 }
 
 @media (min-width: 1281px) {
-  .container{
-    max-width:1281px;
+  .container {
+    max-width: 1281px;
   }
-  .hero{
-    flex-direction:row;
+  .hero {
+    flex-direction: row;
     gap: 5rem;
-     justify-content: flex-start;
+    justify-content: flex-start;
   }
 
-  .hero-img{
-   
-    width:clamp(150px, 100%, 250px);
+  .hero-img {
+    width: clamp(150px, 100%, 250px);
     position: relative;
-    border:unset;
-    box-shadow:unset;
-   
+    border: unset;
+    box-shadow: unset;
   }
 
-  .hero-img::before{
+  .hero-img::before {
     content: "";
     display: block;
     width: 250px;
@@ -190,71 +183,73 @@
     border: 2px solid var(--cr-teal700);
     border-radius: 50%;
     border-color: var(--cr-teal700) transparent var(--cr-teal700) transparent;
-     animation: circle-rotate 2s linear infinite;
+    animation: circle-rotate 2s linear infinite;
   }
 
   @keyframes circle-rotate {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-  
-  .hero-img img{
-    width:80%;
+
+  .hero-img img {
+    width: 80%;
     border-radius: 50%;
     position: absolute;
-    top:16%;
-    left:18%;
+    top: 16%;
+    left: 18%;
   }
 
-  .hero-vr-line{
+  .hero-profile-info {
+    font-size: 1.2rem;
+  }
+  .hero-vr-line {
     border-left: 4px solid var(--cr-slate500);
     height: 400px;
-    box-shadow: 0 0 20px var(--cr-teal700)
-  }
-  
- 
-  .hero-more-info{
-   position: absolute;
-   bottom: 25%;
-   right: unset;
-   left: 40%;
+    box-shadow: 0 0 20px var(--cr-teal700);
   }
 
-  .hero-hr-line{
-    border-top: 4px solid var(--cr-slate500);
-    width:300px;
+  .hero-more-info {
     position: absolute;
-    bottom:35%;
+    bottom: 25%;
+    right: unset;
+    left: 40%;
+  }
+
+  .hero-hr-line {
+    border-top: 4px solid var(--cr-slate500);
+    width: 300px;
+    position: absolute;
+    bottom: 40%;
     right: 30%;
-    box-shadow: 0 0 15px var(--cr-teal700)
+    box-shadow: 0 0 15px var(--cr-teal700);
   }
-  .hero-vr2-line{
+  .hero-vr2-line {
     border-left: 4px solid var(--cr-slate500);
     height: 300px;
     position: absolute;
-    top:35%;
+    top: 35%;
     right: 42%;
-    box-shadow: 0 0 15px var(--cr-teal700)
+    box-shadow: 0 0 15px var(--cr-teal700);
   }
-  .hero-hr2-line{
+  .hero-hr2-line {
     border-top: 4px solid var(--cr-slate500);
-    width:300px;
+    width: 300px;
     position: absolute;
-    top:20%;
+    top: 20%;
     right: 1.2%;
-    box-shadow: 0 0 15px var(--cr-teal700)
+    box-shadow: 0 0 15px var(--cr-teal700);
   }
 
-  
-  .hero-vr3-line{
+  .hero-vr3-line {
     border-left: 4px solid var(--cr-slate500);
     height: 300px;
     position: absolute;
-    top:15%;
+    top: 15%;
     right: 5%;
-    box-shadow: 0 0 15px var(--cr-teal700)
+    box-shadow: 0 0 15px var(--cr-teal700);
   }
-
- 
-
 }
