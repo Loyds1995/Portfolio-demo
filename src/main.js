@@ -9,9 +9,10 @@ import "../components/work-project.css";
 import "../components/footer.css";
 import "../components/util/util.css";
 
-import { htmlSkills } from "./skills/skillsHtml";
 import { htmlProfile } from "./profile/profile";
 import { htmlAbout } from "./about/aboutHtml";
+import { htmlSkills } from "./skills/skillsHtml";
+import { htmlCertificate } from "./cert/certHtml";
 import { htmlContact } from "./footer/footerHtml";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   htmlProfile();
   htmlAbout();
   htmlSkills();
+  htmlCertificate();
   htmlContact();
 
   // nav menu
