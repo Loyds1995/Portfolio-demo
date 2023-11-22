@@ -12,12 +12,14 @@ import "../components/util/util.css";
 import { htmlSkills } from "./skills/skillsHtml";
 import { htmlProfile } from "./profile/profile";
 import { htmlAbout } from "./about/aboutHtml";
+import { htmlContact } from "./footer/footerHtml";
 
 document.addEventListener("DOMContentLoaded", function () {
   // for skills section
   htmlProfile();
   htmlAbout();
   htmlSkills();
+  htmlContact();
 
   // nav menu
   const sections = document.querySelectorAll(".main");

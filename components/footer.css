@@ -20,7 +20,7 @@
   justify-content: center;
   height: 7.5vh;
   width: 100%;
-  padding-inline: 1rem;
+  padding: 1rem;
 }
 
 .footer-contact-content span {
@@ -97,9 +97,12 @@
 
   .footer {
     flex-direction: row;
-    gap: 2rem;
+    justify-content: space-evenly;
     margin-inline: 1rem;
   }
+  /* .footer-contact-content {
+    padding-left: 5rem;
+  } */
 
   .footer-span1 {
     position: absolute;
@@ -150,7 +153,7 @@
 
   .footer {
     flex-direction: row;
-    gap: 3rem;
+    justify-content: space-evenly;
   }
 
   .footer-span1 {
@@ -199,10 +202,6 @@
 
   .line-logo {
     padding-inline: 8rem;
-  }
-
-  .footer {
-    gap: 4rem;
   }
 
   .footer-span1 {
