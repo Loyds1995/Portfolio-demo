@@ -13,6 +13,7 @@ import { htmlProfile } from "./profile/profile";
 import { htmlAbout } from "./about/aboutHtml";
 import { htmlSkills } from "./skills/skillsHtml";
 import { htmlCertificate } from "./cert/certHtml";
+import { htmlProject } from "./work/projectsHtml";
 import { htmlContact } from "./footer/footerHtml";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   htmlAbout();
   htmlSkills();
   htmlCertificate();
+  htmlProject();
   htmlContact();
 
   // nav menu
