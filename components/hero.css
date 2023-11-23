@@ -223,7 +223,7 @@
     border-top: 4px solid var(--cr-slate500);
     width: 300px;
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
     right: 30%;
     box-shadow: 0 0 15px var(--cr-teal700);
   }
