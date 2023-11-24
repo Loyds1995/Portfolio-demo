@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link a");
 
   menuBtn.addEventListener("click", () => {
-    menuLink.classList.add("nav-menu-content");
-    menuLink.style.transition = "1s";
+    menuLink.classList.toggle("nav-menu-link-mobile");
     document.body.style.overflow = "hidden";
     sections.forEach((section) => {
       section.style.opacity = "0.2";
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   closeBtn.addEventListener("click", () => {
-    menuLink.classList.remove("nav-menu-content");
+    menuLink.classList.remove("nav-menu-link-mobile");
     document.body.style.overflow = "auto";
     sections.forEach((section) => {
       section.style.opacity = "1";
@@ -52,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      menuLink.classList.remove("nav-menu-content");
+      menuLink.classList.remove("nav-menu-link-mobile");
       document.body.style.overflow = "auto";
       sections.forEach((section) => {
         section.style.opacity = "1";
