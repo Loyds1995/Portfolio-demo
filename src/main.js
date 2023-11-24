@@ -34,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuBtn.addEventListener("click", () => {
     menuLink.classList.add("nav-menu-content");
-    menuLink.style.width = "200px";
+    menuLink.style.transition = "1s";
     document.body.style.overflow = "hidden";
     sections.forEach((section) => {
       section.style.opacity = "0.2";
+      section.style.transition = ".5s";
     });
   });
 

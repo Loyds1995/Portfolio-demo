@@ -26,15 +26,15 @@
   cursor: pointer;
 }
 
+
 .nav-menu-link {
   display: none;
 }
 
-.nav-menu-link.nav-menu-content {
+.nav-menu-content {
   display: block;
-}
-
-.nav-menu-link {
+  width: 150px;
+  opacity: 1;
   position: fixed;
   height: 100vh;
   right: 0;
@@ -45,6 +45,9 @@
   margin: 0;
   padding: 0;
 }
+
+
+
 .nav-menu-link span {
   margin-bottom: 2rem;
   padding: 5px;
@@ -105,6 +108,7 @@
     width: unset;
     height: unset;
     background: unset;
+    list-style-type: none;
   }
 
   .nav-menu-link span {
