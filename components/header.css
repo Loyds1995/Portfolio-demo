@@ -15,7 +15,7 @@
   width: 100%;
   height: 4px;
   background-color: var(--cr-slate500);
-  box-shadow: 0 0 15px var(--cr-teal700);
+  box-shadow: 0 0 5px var(--cr-teal700);
 }
 
 .header-logo {

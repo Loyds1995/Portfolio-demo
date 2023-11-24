@@ -71,7 +71,7 @@
   box-shadow: inset 0 0 20px #86efac,
               inset 20px 0 200px var(--cr-gray950),
               inset -20px 0 100px  #86efac,
-              inset 20px 0 100px var(--cr-gray950),
+              inset 20px 0 200px var(--cr-gray950),
               inset -20px 0 100px  #86efac,
               0 0 10px var(--cr-gray950),
               -5px 0 10px #86efac,
