@@ -71,7 +71,7 @@
 /* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 } */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .container{
     max-width:768px;
   }
@@ -92,11 +92,12 @@
   }
   
   .nav-menu-link li{
-   padding-right: 2rem;
+   padding-right: 2.5rem;
   }
 
   .nav-menu-link li a:hover{
     color: var(--cr-teal700);
+    font-weight: 900;
     transition: all 0.5s;
   }
   .nav-menu-link li a{
