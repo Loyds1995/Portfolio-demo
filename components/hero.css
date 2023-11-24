@@ -35,6 +35,7 @@
 .hero-img img {
   width: 80%;
   vertical-align: middle;
+  pointer-events: none;
 }
 .hero-profile-info {
   color: var(--cr-slate200);

@@ -16,6 +16,7 @@
 
 .about-content img {
   user-select: none;
+  pointer-events: none;
   width: 6em;
   height: 6em;
   border: 5px solid var(--cr-teal700);

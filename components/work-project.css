@@ -18,6 +18,7 @@
   margin-top: 1rem;
   width: clamp(100px, 100%, 200px);
   height: 300px;
+  cursor: pointer;
 }
 
 .proj-content {
@@ -122,6 +123,7 @@
 
   .proj-img {
     width: clamp(200px, 100%, 300px);
+    cursor: pointer;
   }
 
   .proj-img:hover {
@@ -133,7 +135,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width:1920px){
   .container {
     max-width: 1281px;
   }
@@ -146,6 +148,7 @@
     margin-top: 1.3rem;
     gap: 15rem;
   }
+
 
   .proj-img:hover {
     transform: scale(1.3);
