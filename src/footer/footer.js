@@ -1,13 +1,14 @@
 export const contacts = [
   {
-    contact: "CONTACT",
+    img: 'profile.jpg',
+    name: 'Loida Superticioso',
     contactContent: {
       mobile: {
-        name: "Mobile",
+        name: "Phone:",
         number: "09568669062",
       },
       email: {
-        name: "Email",
+        name: "Email:",
         mail: "lsuperticioso1995@gmail.com",
       },
     },
