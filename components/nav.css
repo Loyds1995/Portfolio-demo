@@ -1,10 +1,14 @@
 .nav-menu{
+ position: fixed;
+ top:0;
+ left:0;
+ right: 0;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   min-height: 5vh;
   padding-top: 3rem;
+  z-index: 999;
 }
 .nav-menu a{
   text-decoration: none;
