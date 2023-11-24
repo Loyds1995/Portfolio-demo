@@ -14,7 +14,7 @@ import { htmlAbout } from "./about/aboutHtml";
 import { htmlSkills } from "./skills/skillsHtml";
 import { htmlCertificate } from "./cert/certHtml";
 import { htmlProject } from "./work/projectsHtml";
-import { htmlContact } from "./footer/footerHtml";
+// import { htmlContact } from "./footer/footerHtml";
 
 document.addEventListener("DOMContentLoaded", function () {
   // for skills section
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   htmlSkills();
   htmlCertificate();
   htmlProject();
-  htmlContact();
+  // htmlContact();
 
   // nav menu
   const sections = document.querySelectorAll(".main");
