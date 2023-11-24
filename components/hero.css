@@ -83,6 +83,7 @@
 
   .hero-img {
     width: clamp(100px, 100%, 200px);
+   
     text-align: center;
     padding: 20px;
     position: relative;
@@ -101,6 +102,11 @@
     border-bottom: unset;
     border-top: 2px solid var(--cr-teal700);
   }
+
+  .hero-profile-info {
+    margin-right: -5rem;
+  }
+  
 
   .hero-more-info {
     position: absolute;
@@ -151,11 +157,14 @@
     height: 400px;
     box-shadow: 0 0 10px var(--cr-slate500);
   }
-
+  .hero-profile-info {
+    margin-right: -10rem;
+  }
+  
   .hero-more-info {
     position: absolute;
     bottom: 25%;
-    right: 40%;
+    right: 30%;
   }
 }
 
