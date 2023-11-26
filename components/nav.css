@@ -1,71 +1,66 @@
-.nav-menu {
+.nav-menu{
+ position: fixed;
+ top:0;
+ left:0;
+ right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 7%;
-  padding: 0 1rem;
+  min-height: 5vh;
+  padding-top: 3rem;
   z-index: 999;
 }
-
-.nav-menu-sitename a {
+.nav-menu a{
   text-decoration: none;
   color: var(--cr-slate200);
-  font-family: "atma", Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 1.3rem;
+  font-family: 'atma',Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
-.nav-menu-bar {
+.nav-menu-bar{
   border: none;
-  background: none;
+  background: transparent;
   color: var(--cr-slate200);
   cursor: pointer;
 }
 
-.nav-menu-link {
+.nav-menu-link.nav-menu-link-mobile{
+  display: block;
+  width: 150px;
+  opacity: 1;
+  list-style-type: none;
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 100%;
+  background-color:var(--cr-teal700);
+  text-align: center;
+  padding-top: 2rem;
+  z-index: 9999;
+}
+
+.nav-menu-link-mobile li span{
+  position: absolute;
+  color: var(--cr-slate200);
+  top:1%;
+  left: 1%;
+  cursor: pointer;
+}
+
+.nav-menu-link-mobile li{
+  padding: 1rem;
+}
+.nav-menu-link-mobile li a:hover{
+  transition: all 0.5s;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.nav-menu-link{
   display: none;
 }
 
-.nav-menu-link.nav-menu-content {
-  display: block;
-}
 
-.nav-menu-link {
-  position: fixed;
-  height: 100vh;
-  right: 0;
-  top: 0;
-  background: var(--cr-teal700);
-  z-index: 999;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-menu-link span {
-  margin-bottom: 2rem;
-  padding: 5px;
-  color: var(--cr-slate200);
-  cursor: pointer;
-}
-
-.nav-menu-link li a {
-  display: block;
-  text-decoration: none;
-  color: var(--cr-slate200);
-  font-family: "atma", Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  text-align: center;
-  padding-block: 1rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.nav-menu-link li a:hover {
-  font-weight: 900;
-}
 
 /* media queries */
 /* @media (min-width: 320px) and (max-width: 480px) {
@@ -81,97 +76,65 @@
 } */
 
 @media (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-  } */
-
-  .nav-menu {
-    justify-content: space-between;
-    padding-inline: 2.5rem;
+  .container{
+    max-width:768px;
   }
-
-  .nav-menu-bar {
+  
+  .nav-menu-bar{
     display: none;
   }
-
-  .nav-menu-link.nav-menu-content {
+  
+  .nav-menu-link.nav-menu-link-mobile{
     display: none;
   }
-
-  .nav-menu-link {
-    display: flex;
-    margin-right: 2rem;
-    position: unset;
-    width: unset;
-    height: unset;
-    background: unset;
-  }
-
-  .nav-menu-link span {
+  .nav-menu-link li span{
     display: none;
   }
+  .nav-menu-link{
+    display:flex;
+    list-style-type: none;
+  }
+  
+  .nav-menu-link li{
+   padding-right: 2.5rem;
+  }
 
-  .nav-menu-link li a {
-    display: unset;
-    text-align: unset;
-    padding-block: unset;
-    margin-left: 1rem;
-    font-size: 1.3rem;
+  .nav-menu-link li a:hover{
+    color: var(--cr-teal700);
+    font-weight: 900;
+    transition: all 0.5s;
+  }
+  .nav-menu-link li a{
     position: relative;
   }
 
-  .nav-menu-link a::after {
+  .nav-menu-link li a::after{
     content: "";
     position: absolute;
+    bottom: -10px;
+    left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--cr-slate200);
-    left: 0;
-    bottom: 2px;
-    transition: 0.5s ease-in;
+    background-color: var(--cr-teal700);
+    transition: all 0.5s ease-in;
   }
 
-  .nav-menu-link a:hover::after {
+  .nav-menu-link li a:hover::after{
     width: 100%;
   }
 
-  .nav-menu-link li a:hover {
-    color: var(--cr-teal700);
-  }
+  
+  
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* .container {
-    max-width: 1025px;
-  } */
-
-  .nav-menu {
-    padding-inline: 3rem;
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+  .container{
+    max-width:1025px;
   }
+} */
 
-  .nav-menu-link {
-    margin-left: 2rem;
+/* @media (min-width: 1281px) {
+  .container{
+    max-width:1281px;
   }
-
-  .nav-menu-link li a {
-    margin-right: 2rem;
-  }
-}
-
-@media (min-width: 1281px) {
-  /* .container {
-    max-width: 1281px;
-  } */
-
-  .nav-menu {
-    padding-inline: 8rem;
-  }
-
-  .nav-menu-link {
-    margin-left: 2.5rem;
-  }
-
-  .nav-menu-link li a {
-    margin-right: 3rem;
-  }
-}
+} */

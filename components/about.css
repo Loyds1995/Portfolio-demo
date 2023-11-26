@@ -16,6 +16,7 @@
 
 .about-content img {
   user-select: none;
+  pointer-events: none;
   width: 6em;
   height: 6em;
   border: 5px solid var(--cr-teal700);
@@ -184,7 +185,7 @@
     max-width: 1281px;
   }
   .about {
-    gap: 7rem;
+    gap: 5rem;
   }
   .about-heading {
     margin-left: -500px;
@@ -201,7 +202,7 @@
     text-align: justify;
     padding-left: 5rem;
     width: clamp(300px, 100%, 800px);
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .about-content img {
@@ -221,6 +222,6 @@
     right: 8%;
   }
   .about-info {
-    gap: 6rem;
+    gap: 5rem;
   }
 }
