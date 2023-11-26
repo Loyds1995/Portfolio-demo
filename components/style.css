@@ -24,6 +24,7 @@ html {
 body {
   background: linear-gradient(-45deg, var(--cr-slate500), var(--cr-gray950));
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 h3,

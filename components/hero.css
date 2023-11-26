@@ -9,27 +9,74 @@
   padding: 1rem;
   position: relative;
 }
-
 .hero-img::before {
   content: "";
   position: absolute;
-  top: 0;
   left: 0;
-  width: 50%;
-  height: 50%;
+  top: 0;
+  width: 0;
+  height: 0;
   border-top: 2px solid var(--cr-teal700);
-  border-left: 2px solid var(--cr-teal700);
+  border-right: 2px solid var(--cr-teal700);
+  animation: border-top-right 3s infinite alternate;
+}
+@keyframes border-top-right {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  25% {
+    width: 200px;
+    height: 0px;
+  }
+  50% {
+    width: 200px;
+    height: 165px;
+  }
+  100% {
+    width: 200px;
+    height: 165px;
+  }
 }
 
 .hero-img::after {
   content: "";
   position: absolute;
-  bottom: 0;
   right: 0;
-  width: 50%;
-  height: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0;
   border-bottom: 2px solid var(--cr-teal700);
-  border-right: 2px solid var(--cr-teal700);
+  border-left: 2px ridge var(--cr-teal700);
+  animation: border-bottom-left 3s infinite alternate;
+}
+
+@keyframes border-bottom-left {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  50% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  50.1% {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  75% {
+    width: 200px;
+    height: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 165px;
+    opacity: 1;
+  }
 }
 
 .hero-img img {
@@ -88,17 +135,27 @@
   }
 
   .hero-img::before {
-    top: unset;
-    bottom: 0;
-    border-bottom: 2px solid var(--cr-teal700);
-    border-top: unset;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid var(--cr-teal700);
+    border-right: 2px solid var(--cr-teal700);
+    animation: border-top-right 3s infinite alternate;
   }
 
   .hero-img::after {
-    bottom: unset;
-    top: 0;
-    border-bottom: unset;
-    border-top: 2px solid var(--cr-teal700);
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid var(--cr-teal700);
+    border-left: 2px ridge var(--cr-teal700);
+    animation: border-bottom-left 3s infinite alternate;
   }
 
   .hero-more-info {
