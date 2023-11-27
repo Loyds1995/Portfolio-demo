@@ -39,6 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
       section.style.opacity = "0.2";
       section.style.transition = ".5s";
     });
+
+    navLinks.forEach((link, index) => {
+      link.style.transition = "none";
+      link.style.opacity = "0";
+      link.style.transform = "translateX(100%)";
+    });
+  
+    setTimeout(() => {
+      navLinks.forEach((link, index) => {
+        link.style.transition = `all 0.5s ${index * 0.1}s`;
+        link.style.opacity = "1";
+        link.style.transform = "translateX(0)";
+      });
+    }, 100);
   });
 
   closeBtn.addEventListener("click", () => {
@@ -47,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((section) => {
       section.style.opacity = "1";
     });
+
   });
 
   navLinks.forEach((link) => {
