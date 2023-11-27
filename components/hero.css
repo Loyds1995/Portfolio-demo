@@ -184,7 +184,7 @@
   .hero-img {
     width: clamp(250px, 100%, 300px);
     border: 2px solid var(--cr-teal700);
-    box-shadow: -4px 4px var(--cr-teal700);
+    box-shadow: -4px 4px var(--cr-slate500);
   }
 
   .hero-img img {
@@ -197,6 +197,7 @@
     bottom: unset;
     border-bottom: unset;
     border-top: unset;
+    border-right: unset;
     border-left: unset;
   }
 
@@ -206,13 +207,14 @@
     top: unset;
     border-bottom: unset;
     border-top: unset;
+    border-left: unset;
     border-right: unset;
   }
 
   .hero-vr-line {
-    border-left: 4px solid var(--cr-teal700);
+    border-left: 4px solid var(--cr-slate500);
     height: 400px;
-    box-shadow: 0 0 10px var(--cr-slate500);
+    box-shadow: 0 0 10px var(--cr-teal700);
   }
   .hero-profile-info {
     margin-right: -10rem;
