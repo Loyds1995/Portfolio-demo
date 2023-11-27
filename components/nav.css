@@ -16,6 +16,9 @@
   font-family: 'atma',Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
+.nav-menu-sitename{
+font-size: 1.1rem;
+}
 
 .nav-menu-bar{
   border: none;
