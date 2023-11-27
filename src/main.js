@@ -43,14 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach((link, index) => {
       link.style.transition = "none";
       link.style.opacity = "0";
-      link.style.transform = "translateX(100%)";
     });
   
     setTimeout(() => {
       navLinks.forEach((link, index) => {
-        link.style.transition = `all 0.5s ${index * 0.1}s`;
+        link.style.transition = `opacity 0.5s ${index * 0.2}s`;
         link.style.opacity = "1";
-        link.style.transform = "translateX(0)";
       });
     }, 100);
   });
@@ -75,4 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // end of nav menu
+
+  const arrowUp = document.querySelector('.arrow');
+
+  arrowUp.addEventListener('click', () =>{
+  window.location.href = '#home';
+  })
 });

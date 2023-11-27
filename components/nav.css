@@ -55,8 +55,7 @@ font-size: 1.1rem;
   padding: 1rem;
 }
 .nav-menu-link-mobile li a:hover{
-  transition: all 0.5s;
-  font-size: 1.1rem;
+  transition: 0.2s ease-in-out;
   font-weight: 900;
 }
 

@@ -56,3 +56,20 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.arrow-up{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.arrow-up span{
+  color: var(--cr-gray950);
+  font-size: 2rem;
+  border: 2px solid var(--cr-slate200);
+  border-radius: 50%;
+  cursor: pointer;
+position: absolute;
+}
