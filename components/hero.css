@@ -262,6 +262,11 @@
     }
   }
 
+  .hero-img::after{
+    border-bottom: unset;
+    border-left: unset;
+  }
+
   .hero-img img {
     width: 80%;
     border-radius: 50%;
