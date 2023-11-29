@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
           link.style.opacity = "1";
         });
       }, 100);
+      
     } else {
       document.body.style.overflow = "auto";
       sections.forEach((section) => {
